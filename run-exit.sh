@@ -7,6 +7,7 @@ docker run \
     --restart always \
     -p 9001:9001 \
     --name tor-exit-relay \
-    tor-relay \
     --env-file tor.env \
+    -e RELAY_TYPE=exit \
+    tor-relay \
     --privileged
