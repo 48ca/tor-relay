@@ -4,8 +4,6 @@ RUN apk --no-cache add \
 	bash \
 	tor
 
-# default port to used for incoming Tor connections
-# can be changed by changing 'ORPort' in torrc
 EXPOSE 9001
 
 # copy in our torrc files

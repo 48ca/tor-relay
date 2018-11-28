@@ -80,13 +80,13 @@
 ## See https://www.torproject.org/docs/tor-doc-relay for details.
 
 ## Required: what port to advertise for incoming Tor connections.
-ORPort RELAY_PORT
+#ORPort RELAY_PORT
 ## If you want to listen on a port other than the one advertised in
 ## ORPort (e.g. to advertise 443 but bind to 9090), you can do it as
 ## follows.  You'll need to do ipchains or other port forwarding
 ## yourself to make this work.
-#ORPort 443 NoListen
-#ORPort 127.0.0.1:9090 NoAdvertise
+ORPort RELAY_PORT NoListen
+ORPort 127.0.0.1:9001 NoAdvertise
 
 ## The IP address or full DNS name for incoming connections to your
 ## relay. Leave commented out and Tor will guess.

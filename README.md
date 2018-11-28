@@ -4,6 +4,8 @@ This is based on [Jessie Frazelle](https://github.com/jessfraz)'s Dockerfile.
 
 ## Quick Start
 Copy `tor.env.sample` to another file and make appropriate changes.
+You can add any enviroment variables you want to it (i.e. `RELAY_PORT`),
+I do not simply to show that you must forward that port to the container when you start the container.
 
 ```
 PORT=9001 # Can be anything that is not blocked by your firewall
