@@ -1,5 +1,5 @@
 # Tor Relay with Docker
-This is a Dockerfile that can be used to run both Tor relays and Tor bridges.
+This is a Dockerfile that can be used to run the three kinds of Tor relays: middle relays, exits, and bridges.
 This is based on [Jessie Frazelle](https://github.com/jessfraz)'s Dockerfile.
 
 ## Quick Start
@@ -17,4 +17,4 @@ docker run --env-file=tor.env.sample \
     jhoughton/tor-relay
 ```
 
-You can also use the provided run scripts.
+You can also use the provided run script.
