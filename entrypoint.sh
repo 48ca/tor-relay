@@ -32,4 +32,6 @@ sed -i "s/RELAY_PORT/${RELAY_PORT}/g" "$file"
 
 echo "Starting ${RELAY_TYPE} relay"
 
-exec tor -f "/etc/tor/torrc.${RELAY_TYPE}"
+chown tor -R /var/lib/tor
+
+exec su tor -s /bin/sh -c "tor -f '/etc/tor/torrc.${RELAY_TYPE}'"

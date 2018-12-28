@@ -18,10 +18,8 @@ RUN chmod ugo+rx /entrypoint.sh
 # make sure files are owned by tor user
 RUN chown -R tor /etc/tor
 
-USER tor
-
 RUN mkdir /var/lib/tor/.tor
 VOLUME /var/lib/tor/.tor
-RUN chown -R tor /var/lib/tor/.tor
+RUN chown -R tor /var/lib/tor
 
 ENTRYPOINT [ "/entrypoint.sh" ]
