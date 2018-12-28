@@ -86,7 +86,7 @@
 ## follows.  You'll need to do ipchains or other port forwarding
 ## yourself to make this work.
 ORPort RELAY_PORT NoListen
-ORPort 127.0.0.1:9001 NoAdvertise
+ORPort 0.0.0.0:9001 NoAdvertise
 
 ## The IP address or full DNS name for incoming connections to your
 ## relay. Leave commented out and Tor will guess.

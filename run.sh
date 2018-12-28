@@ -2,7 +2,7 @@
 
 docker build -t tor-relay .
 
-PORT=443
+PORT=9001
 
 docker run \
     -v /etc/localtime:/etc/localtime \
