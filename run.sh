@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-docker build -t tor-relay .
+docker build -t tor-relay . --no-cache
 
 PORT=9001
 

@@ -1,5 +1,7 @@
 FROM alpine:latest
 
+RUN sed -i -e 's/v[[:digit:]]\.[[:digit:]]/edge/g' /etc/apk/repositories
+RUN apk upgrade --update-cache --available
 RUN apk --no-cache add \
 	bash \
 	tor
